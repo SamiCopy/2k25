@@ -1,0 +1,15 @@
+# ignore local dependencies & logs
+node_modules
+npm-debug.log
+
+# ignore git metadata
+.git
+.gitignore
+
+# ignore local Dockerfile copies
+Dockerfile.txt
+Dockerfile.backup
+
+# any editor/OS files
+.DS_Store
+*.swp

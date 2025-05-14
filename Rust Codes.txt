@@ -1,0 +1,37 @@
+#[no_mangle] 
+       pub extern "C" fn multiply(a: i32, b: i32) -> i32 {
+    a * b
+}
+
+
+tumble ancient snake satoshi drama chat frozen claim deny uphold hazard trumpet
+
+
+
+static mut COUNTER: i32 = 0;
+
+#[no_mangle]
+pub extern "C" fn init_counter(val: i32) {
+    unsafe {
+        COUNTER = val;
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn increment() -> i32 {
+    unsafe {
+        COUNTER += 1;
+        COUNTER
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn result(val: i32) -> i32 {
+    init_counter(val);
+    increment();
+    unsafe { COUNTER }
+}
+
+
+
+
